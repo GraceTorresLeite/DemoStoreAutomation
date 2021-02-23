@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "CO+KWkOBq54+IQXcGIOVXc08QaVfKFKRB+OVNNp7fZPpgs1s9zUCWxVHbPCxftaG9Wr404PNddfhzJeaigKjTQ==",
+  "dgSpecHash": "CoyPNX/KtyMKU6J3xduzkqApuiEWtEaQTU4XGX8Ca//52RSkYKhQgWMtfo5DPd0TCVo3cALHJGLHgecKtorx9w==",
   "success": true,
   "projectFilePath": "C:\\Users\\grace.torres\\source\\repos\\DemoStoreAutomation\\DemoStore\\DemoStore\\DemoStore.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\grace.torres\\.nuget\\packages\\imageresizer\\4.2.8\\imageresizer.4.2.8.nupkg.sha512",
     "C:\\Users\\grace.torres\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",
     "C:\\Users\\grace.torres\\.nuget\\packages\\microsoft.dotnet.internalabstractions\\1.0.0\\microsoft.dotnet.internalabstractions.1.0.0.nupkg.sha512",
     "C:\\Users\\grace.torres\\.nuget\\packages\\microsoft.net.test.sdk\\16.5.0\\microsoft.net.test.sdk.16.5.0.nupkg.sha512",
@@ -19,6 +20,8 @@
     "C:\\Microsoft\\Xamarin\\NuGet\\nunit\\3.12.0\\nunit.3.12.0.nupkg.sha512",
     "C:\\Users\\grace.torres\\.nuget\\packages\\nunit3testadapter\\3.16.1\\nunit3testadapter.3.16.1.nupkg.sha512",
     "C:\\Users\\grace.torres\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
+    "C:\\Users\\grace.torres\\.nuget\\packages\\screenshot\\1.0.0\\screenshot.1.0.0.nupkg.sha512",
+    "C:\\Users\\grace.torres\\.nuget\\packages\\selenium.support\\4.0.0-beta1\\selenium.support.4.0.0-beta1.nupkg.sha512",
     "C:\\Users\\grace.torres\\.nuget\\packages\\selenium.webdriver\\4.0.0-beta1\\selenium.webdriver.4.0.0-beta1.nupkg.sha512",
     "C:\\Users\\grace.torres\\.nuget\\packages\\selenium.webdriver.chromedriver\\89.0.4389.2300-beta\\selenium.webdriver.chromedriver.89.0.4389.2300-beta.nupkg.sha512",
     "C:\\Users\\grace.torres\\.nuget\\packages\\system.appcontext\\4.1.0\\system.appcontext.4.1.0.nupkg.sha512",
@@ -60,5 +63,26 @@
     "C:\\Users\\grace.torres\\.nuget\\packages\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
     "C:\\Users\\grace.torres\\.nuget\\packages\\system.xml.xpath.xmldocument\\4.3.0\\system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'ImageResizer 4.2.8' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "ImageResizer",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Screenshot 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Screenshot",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }

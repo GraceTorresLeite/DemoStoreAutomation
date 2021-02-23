@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "ImageResizer/4.2.8": {
+        "type": "package",
+        "compile": {
+          "lib/net45/ImageResizer.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ImageResizer.dll": {}
+        }
+      },
       "Microsoft.CodeCoverage/16.5.0": {
         "type": "package",
         "compile": {
@@ -418,6 +427,29 @@
         },
         "runtime": {
           "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Screenshot/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/NReco.PhantomJS.dll": {},
+          "lib/TestingPhantomjs.dll": {}
+        },
+        "runtime": {
+          "lib/NReco.PhantomJS.dll": {},
+          "lib/TestingPhantomjs.dll": {}
+        }
+      },
+      "Selenium.Support/4.0.0-beta1": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.0.0-beta1"
+        },
+        "compile": {
+          "lib/netstandard2.1/WebDriver.Support.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/WebDriver.Support.dll": {}
         }
       },
       "Selenium.WebDriver/4.0.0-beta1": {
@@ -1034,6 +1066,19 @@
     }
   },
   "libraries": {
+    "ImageResizer/4.2.8": {
+      "sha512": "3OZKxlsyYr9Zxsz0KwXJ5S749azmjcPV4B344ssR/3oneEY6ZdTawDPochD4Z4RHBs4bYBf592lVhmEngxtZ7g==",
+      "type": "package",
+      "path": "imageresizer/4.2.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "imageresizer.4.2.8.nupkg.sha512",
+        "imageresizer.nuspec",
+        "lib/net45/ImageResizer.XML",
+        "lib/net45/ImageResizer.dll"
+      ]
+    },
     "Microsoft.CodeCoverage/16.5.0": {
       "sha512": "PM5YLtyN45EyUGePJpaNogndlaQPrMgQQXHKMhMESC6KfSVvt+j7+dxBi8NYC6X6dZVysf7ngwhSW3wwvPJRSQ==",
       "type": "package",
@@ -1663,6 +1708,43 @@
         "lib/netstandard1.0/_._",
         "runtime.native.system.4.3.0.nupkg.sha512",
         "runtime.native.system.nuspec"
+      ]
+    },
+    "Screenshot/1.0.0": {
+      "sha512": "+curMdzMisb1uGpFoicwHc63jaYGdtI5TyfSCsGnHPQnryhZ6Eh6EIJ/Y4tESDfNJn3HMYY1oimibrrvaxgIjw==",
+      "type": "package",
+      "path": "screenshot/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/NReco.PhantomJS.xml",
+        "content/TestingPhantomjs.dll.config",
+        "content/phantomjs-license.txt",
+        "content/phantomjs.exe",
+        "lib/NReco.PhantomJS.dll",
+        "lib/TestingPhantomjs.dll",
+        "lib/TestingPhantomjs.pdb",
+        "screenshot.1.0.0.nupkg.sha512",
+        "screenshot.nuspec"
+      ]
+    },
+    "Selenium.Support/4.0.0-beta1": {
+      "sha512": "X/HHsWQHytn2kpuoXlO2NvCRpMcvtjITtVNyi6QKvAUbdP8en1C1ps15Y6TuIVOa3M3K52H4oIQZF1DtkiiBaw==",
+      "type": "package",
+      "path": "selenium.support/4.0.0-beta1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/icon.png",
+        "lib/net45/WebDriver.Support.dll",
+        "lib/net46/WebDriver.Support.dll",
+        "lib/net47/WebDriver.Support.dll",
+        "lib/net48/WebDriver.Support.dll",
+        "lib/net5.0/WebDriver.Support.dll",
+        "lib/netstandard2.0/WebDriver.Support.dll",
+        "lib/netstandard2.1/WebDriver.Support.dll",
+        "selenium.support.4.0.0-beta1.nupkg.sha512",
+        "selenium.support.nuspec"
       ]
     },
     "Selenium.WebDriver/4.0.0-beta1": {
@@ -3877,9 +3959,12 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "ImageResizer >= 4.2.8",
       "Microsoft.NET.Test.Sdk >= 16.5.0",
       "NUnit >= 3.12.0",
       "NUnit3TestAdapter >= 3.16.1",
+      "Screenshot >= 1.0.0",
+      "Selenium.Support >= 4.0.0-beta1",
       "Selenium.WebDriver >= 4.0.0-beta1",
       "Selenium.WebDriver.ChromeDriver >= 89.0.4389.2300-beta"
     ]
@@ -3930,6 +4015,10 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
+          "ImageResizer": {
+            "target": "Package",
+            "version": "[4.2.8, )"
+          },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[16.5.0, )"
@@ -3941,6 +4030,14 @@
           "NUnit3TestAdapter": {
             "target": "Package",
             "version": "[3.16.1, )"
+          },
+          "Screenshot": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
+          "Selenium.Support": {
+            "target": "Package",
+            "version": "[4.0.0-beta1, )"
           },
           "Selenium.WebDriver": {
             "target": "Package",
@@ -3969,5 +4066,27 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'ImageResizer 4.2.8' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "ImageResizer",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Screenshot 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Screenshot",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }

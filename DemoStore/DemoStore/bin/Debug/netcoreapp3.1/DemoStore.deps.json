@@ -8,14 +8,25 @@
     ".NETCoreApp,Version=v3.1": {
       "DemoStore/1.0.0": {
         "dependencies": {
+          "ImageResizer": "4.2.8",
           "Microsoft.NET.Test.Sdk": "16.5.0",
           "NUnit": "3.12.0",
           "NUnit3TestAdapter": "3.16.1",
+          "Screenshot": "1.0.0",
+          "Selenium.Support": "4.0.0-beta1",
           "Selenium.WebDriver": "4.0.0-beta1",
           "Selenium.WebDriver.ChromeDriver": "89.0.4389.2300-beta"
         },
         "runtime": {
           "DemoStore.dll": {}
+        }
+      },
+      "ImageResizer/4.2.8": {
+        "runtime": {
+          "lib/net45/ImageResizer.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.2.8.1168"
+          }
         }
       },
       "Microsoft.CodeCoverage/16.5.0": {
@@ -366,6 +377,29 @@
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.1.0"
+        }
+      },
+      "Screenshot/1.0.0": {
+        "runtime": {
+          "lib/NReco.PhantomJS.dll": {
+            "assemblyVersion": "1.0.1.0",
+            "fileVersion": "1.0.1.0"
+          },
+          "lib/TestingPhantomjs.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Selenium.Support/4.0.0-beta1": {
+        "dependencies": {
+          "Selenium.WebDriver": "4.0.0-beta1"
+        },
+        "runtime": {
+          "lib/netstandard2.1/WebDriver.Support.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
         }
       },
       "Selenium.WebDriver/4.0.0-beta1": {
@@ -741,6 +775,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "ImageResizer/4.2.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3OZKxlsyYr9Zxsz0KwXJ5S749azmjcPV4B344ssR/3oneEY6ZdTawDPochD4Z4RHBs4bYBf592lVhmEngxtZ7g==",
+      "path": "imageresizer/4.2.8",
+      "hashPath": "imageresizer.4.2.8.nupkg.sha512"
+    },
     "Microsoft.CodeCoverage/16.5.0": {
       "type": "package",
       "serviceable": true,
@@ -845,6 +886,20 @@
       "sha512": "sha512-c/qWt2LieNZIj1jGnVNsE2Kl23Ya2aSTBuXMD6V7k9KWr6l16Tqdwq+hJScEpWER9753NWC8h96PaVNY5Ld7Jw==",
       "path": "runtime.native.system/4.3.0",
       "hashPath": "runtime.native.system.4.3.0.nupkg.sha512"
+    },
+    "Screenshot/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+curMdzMisb1uGpFoicwHc63jaYGdtI5TyfSCsGnHPQnryhZ6Eh6EIJ/Y4tESDfNJn3HMYY1oimibrrvaxgIjw==",
+      "path": "screenshot/1.0.0",
+      "hashPath": "screenshot.1.0.0.nupkg.sha512"
+    },
+    "Selenium.Support/4.0.0-beta1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-X/HHsWQHytn2kpuoXlO2NvCRpMcvtjITtVNyi6QKvAUbdP8en1C1ps15Y6TuIVOa3M3K52H4oIQZF1DtkiiBaw==",
+      "path": "selenium.support/4.0.0-beta1",
+      "hashPath": "selenium.support.4.0.0-beta1.nupkg.sha512"
     },
     "Selenium.WebDriver/4.0.0-beta1": {
       "type": "package",

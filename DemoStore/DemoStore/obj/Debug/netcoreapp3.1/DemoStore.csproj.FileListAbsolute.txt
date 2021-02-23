@@ -87,7 +87,6 @@ C:\Users\grace.torres\source\repos\DemoStoreAutomation\DemoStore\DemoStore\bin\D
 C:\Users\grace.torres\source\repos\DemoStoreAutomation\DemoStore\DemoStore\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 C:\Users\grace.torres\source\repos\DemoStoreAutomation\DemoStore\DemoStore\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\Users\grace.torres\source\repos\DemoStoreAutomation\DemoStore\DemoStore\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-C:\Users\grace.torres\source\repos\DemoStoreAutomation\DemoStore\DemoStore\obj\Debug\netcoreapp3.1\DemoStore.csprojAssemblyReference.cache
 C:\Users\grace.torres\source\repos\DemoStoreAutomation\DemoStore\DemoStore\obj\Debug\netcoreapp3.1\DemoStore.AssemblyInfoInputs.cache
 C:\Users\grace.torres\source\repos\DemoStoreAutomation\DemoStore\DemoStore\obj\Debug\netcoreapp3.1\DemoStore.AssemblyInfo.cs
 C:\Users\grace.torres\source\repos\DemoStoreAutomation\DemoStore\DemoStore\obj\Debug\netcoreapp3.1\DemoStore.csproj.CoreCompileInputs.cache
@@ -95,3 +94,7 @@ C:\Users\grace.torres\source\repos\DemoStoreAutomation\DemoStore\DemoStore\obj\D
 C:\Users\grace.torres\source\repos\DemoStoreAutomation\DemoStore\DemoStore\obj\Debug\netcoreapp3.1\DemoStore.dll
 C:\Users\grace.torres\source\repos\DemoStoreAutomation\DemoStore\DemoStore\obj\Debug\netcoreapp3.1\DemoStore.pdb
 C:\Users\grace.torres\source\repos\DemoStoreAutomation\DemoStore\DemoStore\obj\Debug\netcoreapp3.1\DemoStore.genruntimeconfig.cache
+C:\Users\grace.torres\source\repos\DemoStoreAutomation\DemoStore\DemoStore\bin\Debug\netcoreapp3.1\ImageResizer.dll
+C:\Users\grace.torres\source\repos\DemoStoreAutomation\DemoStore\DemoStore\bin\Debug\netcoreapp3.1\NReco.PhantomJS.dll
+C:\Users\grace.torres\source\repos\DemoStoreAutomation\DemoStore\DemoStore\bin\Debug\netcoreapp3.1\TestingPhantomjs.dll
+C:\Users\grace.torres\source\repos\DemoStoreAutomation\DemoStore\DemoStore\bin\Debug\netcoreapp3.1\WebDriver.Support.dll
