@@ -10,13 +10,17 @@
 
 #### Tests evidences
 
-	- <img src="/screenshot/Imagem_1.png" width="400" height="200">
+* Home 
+<img src="/screenshot/Imagem_1.png" width="400" height="200">
 
-	- <img src="/screenshot/Imagem_2.png" width="400" height="200">
+* Search product Batman
+<img src="/screenshot/Imagem_2.png" width="400" height="200">
 
-	- <img src="/screenshot/Imagem_3.png" width="400" height="200">
+* Add cart
+<img src="/screenshot/Imagem_3.png" width="400" height="200">
 
-	- <img src="/screenshot/Imagem_4.png" width="400" height="200">
+* Search product PS2
+<img src="/screenshot/Imagem_4.png" width="400" height="200">
 
 #### Coverage
 <img src="/img/DemoStore3TestsOk.png" width="500" height="300">
