@@ -8,17 +8,41 @@
     ".NETCoreApp,Version=v3.1": {
       "DemoStore/1.0.0": {
         "dependencies": {
+          "FluentAutomation.SeleniumWebDriver": "3.0.0",
           "ImageResizer": "4.2.8",
           "Microsoft.NET.Test.Sdk": "16.5.0",
           "NUnit": "3.12.0",
           "NUnit3TestAdapter": "3.16.1",
           "Screenshot": "1.0.0",
+          "Selenium.PhantomJS.WebDriver": "2.1.1",
           "Selenium.Support": "4.0.0-beta1",
           "Selenium.WebDriver": "4.0.0-beta1",
-          "Selenium.WebDriver.ChromeDriver": "89.0.4389.2300-beta"
+          "Selenium.WebDriver.ChromeDriver": "89.0.4389.2300-beta",
+          "Selenium.WebDriver.PhantomJS": "1.0.0"
         },
         "runtime": {
           "DemoStore.dll": {}
+        }
+      },
+      "FluentAutomation.Core/3.0.0": {
+        "runtime": {
+          "lib/net40/FluentAutomation.Core.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
+        }
+      },
+      "FluentAutomation.SeleniumWebDriver/3.0.0": {
+        "dependencies": {
+          "FluentAutomation.Core": "3.0.0",
+          "Newtonsoft.Json": "12.0.3",
+          "Selenium.Support": "4.0.0-beta1"
+        },
+        "runtime": {
+          "lib/net40/FluentAutomation.SeleniumWebDriver.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
+          }
         }
       },
       "ImageResizer/4.2.8": {
@@ -391,6 +415,7 @@
           }
         }
       },
+      "Selenium.PhantomJS.WebDriver/2.1.1": {},
       "Selenium.Support/4.0.0-beta1": {
         "dependencies": {
           "Selenium.WebDriver": "4.0.0-beta1"
@@ -414,6 +439,7 @@
         }
       },
       "Selenium.WebDriver.ChromeDriver/89.0.4389.2300-beta": {},
+      "Selenium.WebDriver.PhantomJS/1.0.0": {},
       "System.AppContext/4.1.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
@@ -775,6 +801,20 @@
       "serviceable": false,
       "sha512": ""
     },
+    "FluentAutomation.Core/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VKDyIIveMhPOPrFFhlFnXFBeaVZjuxBefSQBk7BxAQCccVvjDiX5GnYd5mb5hlqnXuZhKGJF6m04vHmjcNZUKA==",
+      "path": "fluentautomation.core/3.0.0",
+      "hashPath": "fluentautomation.core.3.0.0.nupkg.sha512"
+    },
+    "FluentAutomation.SeleniumWebDriver/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1tl+lc7hHfNI6+jbRWVIg6DR2xkaKB9xEa7hH52D4dUXN64CQIznijVNuHdJv3MY7df8rjeV2rs1Bybt/fr15g==",
+      "path": "fluentautomation.seleniumwebdriver/3.0.0",
+      "hashPath": "fluentautomation.seleniumwebdriver.3.0.0.nupkg.sha512"
+    },
     "ImageResizer/4.2.8": {
       "type": "package",
       "serviceable": true,
@@ -894,6 +934,13 @@
       "path": "screenshot/1.0.0",
       "hashPath": "screenshot.1.0.0.nupkg.sha512"
     },
+    "Selenium.PhantomJS.WebDriver/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RkbBQqVh47WZWQjwl5iM/FFzY6ST89w9Pts31Vft36H/10gCLipRoSsM/ewkSm8EUWibagOVyAOQDqsL5RSzhw==",
+      "path": "selenium.phantomjs.webdriver/2.1.1",
+      "hashPath": "selenium.phantomjs.webdriver.2.1.1.nupkg.sha512"
+    },
     "Selenium.Support/4.0.0-beta1": {
       "type": "package",
       "serviceable": true,
@@ -914,6 +961,13 @@
       "sha512": "sha512-P9Z2/Zk3Mg4NxevRpKXn5rHZKjEDUulxuKW0k6leeEFi6h/+ZO7Cf9m+WN6gbBaP+rwg3tRLYzsXuk2jcWvFdQ==",
       "path": "selenium.webdriver.chromedriver/89.0.4389.2300-beta",
       "hashPath": "selenium.webdriver.chromedriver.89.0.4389.2300-beta.nupkg.sha512"
+    },
+    "Selenium.WebDriver.PhantomJS/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4q34xP03XPLCyaUoC4LpLUhgobfmlA9ZcB+v6MDHtZUvTxtObUhusepdPp/8FoesntugdwQH22h+lxzno0ujXg==",
+      "path": "selenium.webdriver.phantomjs/1.0.0",
+      "hashPath": "selenium.webdriver.phantomjs.1.0.0.nupkg.sha512"
     },
     "System.AppContext/4.1.0": {
       "type": "package",

@@ -98,3 +98,6 @@ C:\Users\grace.torres\source\repos\DemoStoreAutomation\DemoStore\DemoStore\bin\D
 C:\Users\grace.torres\source\repos\DemoStoreAutomation\DemoStore\DemoStore\bin\Debug\netcoreapp3.1\NReco.PhantomJS.dll
 C:\Users\grace.torres\source\repos\DemoStoreAutomation\DemoStore\DemoStore\bin\Debug\netcoreapp3.1\TestingPhantomjs.dll
 C:\Users\grace.torres\source\repos\DemoStoreAutomation\DemoStore\DemoStore\bin\Debug\netcoreapp3.1\WebDriver.Support.dll
+C:\Users\grace.torres\source\repos\DemoStoreAutomation\DemoStore\DemoStore\obj\Debug\netcoreapp3.1\DemoStore.csprojAssemblyReference.cache
+C:\Users\grace.torres\source\repos\DemoStoreAutomation\DemoStore\DemoStore\bin\Debug\netcoreapp3.1\FluentAutomation.Core.dll
+C:\Users\grace.torres\source\repos\DemoStoreAutomation\DemoStore\DemoStore\bin\Debug\netcoreapp3.1\FluentAutomation.SeleniumWebDriver.dll

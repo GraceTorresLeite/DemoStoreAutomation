@@ -2,6 +2,29 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "FluentAutomation.Core/3.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/FluentAutomation.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net40/FluentAutomation.Core.dll": {}
+        }
+      },
+      "FluentAutomation.SeleniumWebDriver/3.0.0": {
+        "type": "package",
+        "dependencies": {
+          "FluentAutomation.Core": "3.0.0",
+          "Newtonsoft.Json": "5.0.5",
+          "Selenium.Support": "2.41.0"
+        },
+        "compile": {
+          "lib/net40/FluentAutomation.SeleniumWebDriver.dll": {}
+        },
+        "runtime": {
+          "lib/net40/FluentAutomation.SeleniumWebDriver.dll": {}
+        }
+      },
       "ImageResizer/4.2.8": {
         "type": "package",
         "compile": {
@@ -440,6 +463,12 @@
           "lib/TestingPhantomjs.dll": {}
         }
       },
+      "Selenium.PhantomJS.WebDriver/2.1.1": {
+        "type": "package",
+        "build": {
+          "build/Selenium.PhantomJS.WebDriver.targets": {}
+        }
+      },
       "Selenium.Support/4.0.0-beta1": {
         "type": "package",
         "dependencies": {
@@ -468,6 +497,12 @@
         "type": "package",
         "build": {
           "build/Selenium.WebDriver.ChromeDriver.targets": {}
+        }
+      },
+      "Selenium.WebDriver.PhantomJS/1.0.0": {
+        "type": "package",
+        "build": {
+          "build/Selenium.WebDriver.PhantomJS.targets": {}
         }
       },
       "System.AppContext/4.1.0": {
@@ -1066,6 +1101,30 @@
     }
   },
   "libraries": {
+    "FluentAutomation.Core/3.0.0": {
+      "sha512": "VKDyIIveMhPOPrFFhlFnXFBeaVZjuxBefSQBk7BxAQCccVvjDiX5GnYd5mb5hlqnXuZhKGJF6m04vHmjcNZUKA==",
+      "type": "package",
+      "path": "fluentautomation.core/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluentautomation.core.3.0.0.nupkg.sha512",
+        "fluentautomation.core.nuspec",
+        "lib/net40/FluentAutomation.Core.dll"
+      ]
+    },
+    "FluentAutomation.SeleniumWebDriver/3.0.0": {
+      "sha512": "1tl+lc7hHfNI6+jbRWVIg6DR2xkaKB9xEa7hH52D4dUXN64CQIznijVNuHdJv3MY7df8rjeV2rs1Bybt/fr15g==",
+      "type": "package",
+      "path": "fluentautomation.seleniumwebdriver/3.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluentautomation.seleniumwebdriver.3.0.0.nupkg.sha512",
+        "fluentautomation.seleniumwebdriver.nuspec",
+        "lib/net40/FluentAutomation.SeleniumWebDriver.dll"
+      ]
+    },
     "ImageResizer/4.2.8": {
       "sha512": "3OZKxlsyYr9Zxsz0KwXJ5S749azmjcPV4B344ssR/3oneEY6ZdTawDPochD4Z4RHBs4bYBf592lVhmEngxtZ7g==",
       "type": "package",
@@ -1728,6 +1787,19 @@
         "screenshot.nuspec"
       ]
     },
+    "Selenium.PhantomJS.WebDriver/2.1.1": {
+      "sha512": "RkbBQqVh47WZWQjwl5iM/FFzY6ST89w9Pts31Vft36H/10gCLipRoSsM/ewkSm8EUWibagOVyAOQDqsL5RSzhw==",
+      "type": "package",
+      "path": "selenium.phantomjs.webdriver/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Selenium.PhantomJS.WebDriver.targets",
+        "driver/phantomjs.exe",
+        "selenium.phantomjs.webdriver.2.1.1.nupkg.sha512",
+        "selenium.phantomjs.webdriver.nuspec"
+      ]
+    },
     "Selenium.Support/4.0.0-beta1": {
       "sha512": "X/HHsWQHytn2kpuoXlO2NvCRpMcvtjITtVNyi6QKvAUbdP8en1C1ps15Y6TuIVOa3M3K52H4oIQZF1DtkiiBaw==",
       "type": "package",
@@ -1781,6 +1853,19 @@
         "nupkg-icon.png",
         "selenium.webdriver.chromedriver.89.0.4389.2300-beta.nupkg.sha512",
         "selenium.webdriver.chromedriver.nuspec"
+      ]
+    },
+    "Selenium.WebDriver.PhantomJS/1.0.0": {
+      "sha512": "4q34xP03XPLCyaUoC4LpLUhgobfmlA9ZcB+v6MDHtZUvTxtObUhusepdPp/8FoesntugdwQH22h+lxzno0ujXg==",
+      "type": "package",
+      "path": "selenium.webdriver.phantomjs/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Selenium.WebDriver.PhantomJS.targets",
+        "driver/phantomjs.exe",
+        "selenium.webdriver.phantomjs.1.0.0.nupkg.sha512",
+        "selenium.webdriver.phantomjs.nuspec"
       ]
     },
     "System.AppContext/4.1.0": {
@@ -3959,14 +4044,17 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "FluentAutomation.SeleniumWebDriver >= 3.0.0",
       "ImageResizer >= 4.2.8",
       "Microsoft.NET.Test.Sdk >= 16.5.0",
       "NUnit >= 3.12.0",
       "NUnit3TestAdapter >= 3.16.1",
       "Screenshot >= 1.0.0",
+      "Selenium.PhantomJS.WebDriver >= 2.1.1",
       "Selenium.Support >= 4.0.0-beta1",
       "Selenium.WebDriver >= 4.0.0-beta1",
-      "Selenium.WebDriver.ChromeDriver >= 89.0.4389.2300-beta"
+      "Selenium.WebDriver.ChromeDriver >= 89.0.4389.2300-beta",
+      "Selenium.WebDriver.PhantomJS >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -4015,6 +4103,10 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
+          "FluentAutomation.SeleniumWebDriver": {
+            "target": "Package",
+            "version": "[3.0.0, )"
+          },
           "ImageResizer": {
             "target": "Package",
             "version": "[4.2.8, )"
@@ -4035,6 +4127,10 @@
             "target": "Package",
             "version": "[1.0.0, )"
           },
+          "Selenium.PhantomJS.WebDriver": {
+            "target": "Package",
+            "version": "[2.1.1, )"
+          },
           "Selenium.Support": {
             "target": "Package",
             "version": "[4.0.0-beta1, )"
@@ -4046,6 +4142,10 @@
           "Selenium.WebDriver.ChromeDriver": {
             "target": "Package",
             "version": "[89.0.4389.2300-beta, )"
+          },
+          "Selenium.WebDriver.PhantomJS": {
+            "target": "Package",
+            "version": "[1.0.0, )"
           }
         },
         "imports": [
@@ -4068,6 +4168,26 @@
     }
   },
   "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'FluentAutomation.Core 3.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "FluentAutomation.Core",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'FluentAutomation.SeleniumWebDriver 3.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "FluentAutomation.SeleniumWebDriver",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
     {
       "code": "NU1701",
       "level": "Warning",

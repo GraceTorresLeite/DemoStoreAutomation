@@ -1,13 +1,10 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using System.Drawing.Imaging;
-using OpenQA.Selenium.Support.UI;
+using DemoStore.PageObjects;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading;
-using System.IO;
+
 
 namespace DemoStore.ScreenshotImage
 {
@@ -35,11 +32,11 @@ namespace DemoStore.ScreenshotImage
         {
             driver = new ChromeDriver(@"c:\program files\google\chrome");
             driver.Manage().Window.Maximize();
-            baseURL = "https://demo.cs-cart.com/stores/090e9b8116f9a3d9/";
+            baseURL = "https://demo.cs-cart.com/";
             screenshotsPasta = @"c:\users\grace.torres\source\repos\demostoreautomation\screenshot\";
         }
 
-        public void capturaImagem()
+        public void captureImage()
         {
             Screenshot(driver, screenshotsPasta + "Imagem_" + count++ + ".png");
             Thread.Sleep(1000);
@@ -62,9 +59,27 @@ namespace DemoStore.ScreenshotImage
 
         public void TakeScreenshots()
         {
-           driver.Navigate().GoToUrl(baseURL);
+            driver.Navigate().GoToUrl(baseURL);
             Thread.Sleep(1000);
-            capturaImagem();
+            captureImage();
+            Thread.Sleep(1000);
+
+            HomeSearchBatman homePage = new HomeSearchBatman(driver);
+            homePage.writeSearch("Batman");
+            Thread.Sleep(2000);
+            captureImage();
+            Thread.Sleep(1000);
+
+            AddProductBatmanCart addProductCart = new AddProductBatmanCart(driver);
+            addProductCart.addProduct();
+            Thread.Sleep(10000);
+            captureImage();
+            Thread.Sleep(1000);
+
+            SearchPS2 searchPS2 = new SearchPS2(driver);
+            searchPS2.writeSearch("PS2");
+            Thread.Sleep(2000);
+            captureImage();
             Thread.Sleep(1000);
         }
     }

@@ -14,7 +14,7 @@ namespace DemoStore.PageObjects
             Driver = webDriver;
         }
 
-        public IWebElement inputSearch => Driver.FindElement(By.Id("search_input"));
+        IWebElement inputSearch => Driver.FindElement(By.Id("search_input"));
         IWebElement btnSearch => Driver.FindElement(By.XPath("//button[@title='Search']"));
 
         public void writeSearch(string search)
@@ -22,5 +22,7 @@ namespace DemoStore.PageObjects
             inputSearch.SendKeys(search);
             btnSearch.Submit();
         }
+
+       
     }
 }
